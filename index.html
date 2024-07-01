@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encrypt/Decrypt Text</title>
+</head>
+<body>
+    <h1>Encrypt or Decrypt Text</h1>
+    <form action="/encrypt" method="post">
+        <label for="text">Text to Encrypt:</label><br>
+        <input type="text" id="text" name="text"><br><br>
+        <input type="submit" value="Encrypt">
+    </form>
+    <br>
+    <form action="/decrypt" method="post">
+        <label for="text">Text to Decrypt:</label><br>
+        <input type="text" id="text" name="text"><br><br>
+        <input type="submit" value="Decrypt">
+    </form>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    <h1>{{ action }} Result</h1>
+    <p>{{ result }}</p>
+    <br>
+    <a href="/">Go Back</a>
+</body>
+</html>
